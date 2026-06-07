@@ -11,12 +11,6 @@
   }
 /* variaveis para usarmos no css */
 
-/* deixar essa fonte para que as letras fiquem mais finas */
-html {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-}
-/* deixar essa fonte para que as letras fiquem mais finas */
-
 /* Corpo da Pagina */
   body {
     background-color: var(--corpo);
