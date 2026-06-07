@@ -24,6 +24,7 @@ section {
   align-items: center;
   gap: 10px;
   margin: 10px 0 5px 0;
+  border: 0px;
 }
 
 .carrossel-controles {
@@ -45,6 +46,7 @@ section {
 
 .carrossel-track img {
   width: 100%;
+  hight: 100%;
   flex-shrink: 0;
   height: 280px;
   object-fit: cover;
@@ -102,12 +104,8 @@ section {
 @media (max-width: 1090px) {
 
   section {
-    width: 65%;
+    width: 75%;
     max-width: 580px;
-  }
-
-  .carrossel-track img {
-    height: 240px;
   }
 }
 
