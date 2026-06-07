@@ -1,222 +1,37 @@
-/* deixar essa fonte para que as letras fiquem mais finas */
+/* ============================================
+   style-contratar.css
+   Específico da página: contratar.html
+   ============================================ */
 
-html {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+/* Parágrafo introdutório da página */
+main p {
+  margin: 15px 0 0 0;
+  font-size: 1rem;
 }
 
-/* deixar essa fonte para que as letras fiquem mais finas */
+/* ============================================
+   MEDIA QUERY — tablet (max 1090px)
+   ============================================ */
+@media (max-width: 1090px) {
 
-/* variaveis para usarmos no css */
-:root {
-    --menu-letra-color: #c9a84c;
-    --corpo-letra-color: rgba(201, 168, 76, 0.75);
-    --cor-borda:  rgba(247, 181, 2, 0.979);
-    --menu: #0a0a0a;
-    --corpo : #111111;
-    --background-color: rgb(88, 73, 73);
-    --text-color: white;
-    --font-size: 18px;
+  article:last-of-type section {
+    width: 65%;
+    max-width: 580px;
   }
-/* variaveis para usarmos no css */
+}
 
-/* Corpo da Pagina */
-  body {
-    background-color: var(--corpo);
-    color: var(--corpo-letra-color);
-    font-size: var(--font-size);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    min-height: 100vh; /* Aqui estamos fazendo com que o corpo da página ocupe toda a altura da viewport */
+/* ============================================
+   MEDIA QUERY — mobile (max 700px)
+   ============================================ */
+@media (max-width: 700px) {
+
+  main > p {
+    font-size: 0.88rem;
+    padding: 0 18px;
   }
 
-/* Corpo da Pagina */
-
-
-/* Cabeçalho do site */
-/* header - cabeçalho desktop */
-
-  header {
-    background-color: var(--menu);
-    color: var(--menu-letra-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    padding: 5px;
-    border-bottom: 2px solid var(--cor-borda);
-  }
-
-  header img {
-    width: 200px;
-    height: auto;
-    margin: 10px 0 10px 40px;
-  }
-
-/* header - cabeçalho desktop */
-
-/* Navegação - cabeçalho desktop */
-
-  ul {
-    list-style-type: none;
-    text-decoration: none;
-  }
-
-  ul a {
-    text-decoration: none;
-    color: white; /* Herda a cor do elemento pai */
-  }
-
-  ul li {
-    display: inline-block;
-    margin: 0 15px;
-    font-size: clamp(16px, 2vw, 25px);
-  }
-
-  ul li::before {
-    content: "\2605";
-    font-size: clamp(16px, 2vw, 25px);
-    margin-right: 8px;
-  }
-
-    li a:hover {
-      color: var(--menu-letra-color);
-    }
-/* Navegação - cabeçalho desktop */
-/* Cabeçalho do site */
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: clamp(14px, 2vw, 20px)
-  }
-  
-  main p {
-    max-width: 1200px;
-    margin: 25px 0 0 0;
-  }
-
-  article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 450px;
-    max-width: 100%;
-    text-align: justify;
-    margin: 50px 10px 0 10px;
-    padding: 15px 15px 35px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section:hover {
-    /*backgroud do botão assim que passamos o mouse por dentro*/
-    background: linear-gradient(45deg, rgba(255, 238, 1, 0.74), var(--cor-borda), rgba(255, 238, 1, 0.74));
-    border-radius: 10px;
-    border: 2px solid var(--menu-letra-color);
-    color: black;
-  }
-  
-  section p {
-    margin: 0 15px 0 15px;
-  }
-
-@media (max-width: 1067px) {
-
-  article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    width: 40%;
-    text-align: justify;
-    margin: 25px;
-    padding: 0px 15px 5px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section p {
-    margin: 0 15px 0 15px;
-  }
-
-} 
-
-
-
-@media (max-width: 888px) {
-
-  body {
-    background-color: var(--corpo);
-    color: var(--corpo-letra-color);
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  article:last-of-type section {
     width: 100%;
+    max-width: 460px;
   }
-
-  header ul li {
-    margin: 5px;
-    padding: 10px;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid var(--cor-borda);;
-  }
-
-  header ul a:hover {
-      background-color: var(--menu-letra-color);
-      color: white;
-    }
-
-  article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-  }
-
-  main p {
-    max-width: 1200px;
-    margin: 25px 0 0 0;
-    font-size: 18px;
-  } 
-
-  section {
-    width: 40%;
-    text-align: justify;
-    margin: 25px;
-    padding: 0px 15px 5px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section p {
-    margin: 0 15px 0 15px;
-    font-size: 18px
-  }
-
-
 }

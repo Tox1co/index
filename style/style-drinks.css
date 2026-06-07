@@ -1,303 +1,133 @@
-/* deixar essa fonte para que as letras fiquem mais finas */
+/* ============================================
+   style-drinks.css
+   Específico da página: drinks-cardapios.html
+   ============================================ */
 
-html {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+/* H1 da página */
+main h1 {
+  margin-bottom: 5px;
 }
 
-/* deixar essa fonte para que as letras fiquem mais finas */
-
-/* variaveis para usarmos no css */
-:root {
-    --menu-letra-color: #c9a84c;
-    --corpo-letra-color: rgba(201, 168, 76, 0.75);
-    --cor-borda:  rgba(247, 181, 2, 0.979);
-    --menu: #0a0a0a;
-    --corpo : #111111;
-    --background-color: rgb(88, 73, 73);
-    --text-color: white;
-    --font-size: 18px;
-  }
-/* variaveis para usarmos no css */
-
-/* Corpo da Pagina */
-  body {
-    background-color: var(--corpo);
-    color: var(--corpo-letra-color);
-    font-size: var(--font-size);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    min-height: 100vh; /* Aqui estamos fazendo com que o corpo da página ocupe toda a altura da viewport */
-  }
-
-/* Corpo da Pagina */
-
-
-/* Cabeçalho do site */
-/* header - cabeçalho desktop */
-
-  header {
-    background-color: var(--menu);
-    color: var(--menu-letra-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    padding: 5px;
-    border-bottom: 2px solid var(--cor-borda);
-  }
-
-  header img {
-    width: 200px;
-    height: auto;
-    margin: 10px 0 10px 40px;
-  }
-
-/* header - cabeçalho desktop */
-
-/* Navegação - cabeçalho desktop */
-
-  ul {
-    list-style-type: none;
-    text-decoration: none;
-  }
-
-  ul a {
-    text-decoration: none;
-    color: white; /* Herda a cor do elemento pai */
-  }
-
-  ul li {
-    display: inline-block;
-    margin: 0 15px;
-    font-size: clamp(16px, 2vw, 25px);
-  }
-
-  ul li::before {
-    content: "\2605";
-    font-size: clamp(16px, 2vw, 25px);
-    margin-right: 8px;
-  }
-
-    li a:hover {
-      color: var(--menu-letra-color);
-    }
-/* Navegação - cabeçalho desktop */
-/* Cabeçalho do site */
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: clamp(14px, 2vw, 20px)
-  }
-  
-  main p {
-    max-width: 1200px;
-    margin: 25px 0 0 0;
-  }
-
-  article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: justify;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 450px;
-    max-width: 100%;
-    text-align: justify;
-    margin: 25px;
-    padding: 15px 15px 5px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-  
-  section p {
-    margin: 0 35px 0 35px;
-  }
-
-  img {
-    width: 300px
-  }
-
-  #drinks {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 75px 0 20px 0;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  #cardapios {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 25px 0 20px 0;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  footer{
-    text-align: center;
-    margin: 0px;
-    background-color: var(--menu);
-    position: relative;
-  }
-
-@media (max-width: 1067px) {
-
-  article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    width: 40%;
-    text-align: justify;
-    margin: 25px;
-    padding: 0px 15px 5px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section p {
-    margin: 0 15px 0 15px;
-  }
-
-} 
-
-
-
-@media (max-width: 888px) {
-
-  body {
-    background-color: var(--corpo);
-    color: var(--corpo-letra-color);
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  header ul li {
-    width: 200px;
-    font-size:22px;
-    margin: 10px;
-    padding: 15px;
-    justify-content: center;
-    border-radius: 5px;
-    border: 2px solid var(--cor-borda);;
-  }
-
-  header ul a:hover {
-      background-color: var(--menu-letra-color);
-      color: white;
-    }
-
-  article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-  }
-
-  main p {
-    max-width: 1200px;
-    margin: 25px 0 0 0;
-    font-size: 18px;
-  } 
-
-  section {
-    width: 70%;
-    text-align: justify;
-    margin: 25px;
-    padding: 0px 15px 5px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section p {
-    margin: 0 15px 0 15px;
-    font-size: 22px
-  }
-
-
+/* Sections da página de drinks ficam um pouco mais largas
+   para acomodar o carrossel confortavelmente */
+section {
+  width: 500px;
 }
-/*carrosel*/
 
+/* ============================================
+   CARROSSEL — estrutura e visual
+   ============================================ */
 .carrossel {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 5px 0;
 }
 
 .carrossel-controles {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.carrossel-track {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
 }
 
 .carrossel-track img {
-    width: 250px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 5px;
-    display: none; /* JS controla qual aparece */
+  width: 100%;
+  flex-shrink: 0;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
 }
 
+/* Botões de navegação do carrossel */
 .btn-carrossel {
-    background-color: var(--cor-borda);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 50%;
+  background-color: transparent;
+  color: var(--menu-letra-color);
+  border: 2px solid var(--cor-borda);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-carrossel:hover {
-    background-color: var(--cor-borda);
+  background-color: var(--menu-letra-color);
+  color: white;
 }
 
-/* Bolinhas */
+/* Bolinhas indicadoras */
 .bolinhas {
-    display: flex;
-    gap: 8px;
-    margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 4px;
 }
 
-.bolinha {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--cor-borda);
-    cursor: pointer;
-    display: inline-block;
+.bolinhas span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--corpo-letra-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.bolinha.ativa {
-    background-color: var(--cor-borda);
+.bolinhas span.ativa {
+  background-color: var(--menu-letra-color);
+}
+
+/* ============================================
+   MEDIA QUERY — tablet (max 1090px)
+   ============================================ */
+@media (max-width: 1090px) {
+
+  section {
+    width: 65%;
+    max-width: 580px;
+  }
+
+  .carrossel-track img {
+    height: 240px;
+  }
+}
+
+/* ============================================
+   MEDIA QUERY — mobile (max 700px)
+   ============================================ */
+@media (max-width: 700px) {
+
+  section {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .carrossel-track img {
+    height: 200px;
+  }
+
+  .btn-carrossel {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
 }

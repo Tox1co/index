@@ -1,36 +1,296 @@
 @charset "UTF-8";
-/* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
-/* Fonte geral do site */
+
+/* ============================================
+   FONTE GERAL DO SITE
+   ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&display=swap');
-/* Fonte geral do site */
-/* apenas para termos uma fonte mais bonita, qualquer mudança que façamos logo a baixo em alguma fonte não vai afetar o restante */
 
-/* variaveis para usarmos no css */
+/* ============================================
+   VARIÁVEIS GLOBAIS
+   ============================================ */
 :root {
-    --menu-letra-color: #c9a84c;
-    --corpo-letra-color: rgba(201, 168, 76, 0.75);
-    --cor-borda:  rgba(247, 181, 2, 0.979);
-    --menu: #000000;
-    --corpo : #111111;
-    --background-color: rgb(88, 73, 73);
-    --text-color: white;
-    --font-size: 18px;
-  }
-/* variaveis para usarmos no css */
+  --menu-letra-color: #c9a84c;
+  --corpo-letra-color: rgba(201, 168, 76, 0.75);
+  --cor-borda: rgba(247, 181, 2, 0.979);
+  --menu: #000000;
+  --corpo: #111111;
+  --background-color: rgb(88, 73, 73);
+  --text-color: white;
+  --font-size: 18px;
+}
 
+/* ============================================
+   RESET BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ============================================
+   HTML / FONTE BASE
+   ============================================ */
 html {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: clamp(20px, 1.5vw, 26px);
 }
 
+/* ============================================
+   BODY
+   ============================================ */
+body {
+  background-color: var(--corpo);
+  color: var(--corpo-letra-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
 
-/* Rodapé do site*/
+/* ============================================
+   HEADER — desktop
+   ============================================ */
+header {
+  background-color: var(--menu);
+  color: var(--menu-letra-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 5px 30px;
+  border-bottom: 0.5px solid var(--cor-borda);
+}
 
-footer{
-    border-top: 0.5px solid var(--cor-borda);
-    text-align: center;
-    margin: 0px;
-    background-color: var(--menu);
-    position: relative;
-    font-size: 14px;
+header img {
+  width: 200px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* ============================================
+   NAVEGAÇÃO — desktop
+   ============================================ */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+ul li::before {
+  content: "\2605";
+  margin-right: 8px;
+  color: var(--menu-letra-color);
+}
+
+li a:hover {
+  color: var(--menu-letra-color);
+}
+
+/* ============================================
+   MAIN — base compartilhada
+   ============================================ */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main h1 {
+  color: var(--menu-letra-color);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.8rem;
+  margin: 30px 0 10px 0;
+  letter-spacing: 1px;
+}
+
+main > p {
+  width: 100%;
+  max-width: 1200px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0 0 0;
+  padding: 0 30px;
+}
+
+/* ============================================
+   ARTICLE — base compartilhada
+   ============================================ */
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px 15px 30px 15px;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+/* ============================================
+   SECTION — base compartilhada
+   ============================================ */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  max-width: 100%;
+  text-align: justify;
+  padding: 20px 20px 15px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--cor-borda);
+}
+
+section h2 {
+  color: var(--menu-letra-color);
+  font-family: 'Playfair Display', Georgia, serif;
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+section p {
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  border-top: 0.5px solid var(--cor-borda);
+  text-align: center;
+  margin: 0;
+  background-color: var(--menu);
+  color: var(--corpo-letra-color);
+  position: relative;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+/* ============================================
+   MEDIA QUERY — tablet (max 1090px)
+   ============================================ */
+@media (max-width: 1090px) {
+
+  article {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 25px 30px 25px;
   }
+
+  section {
+    width: 65%;
+    max-width: 580px;
+  }
+}
+
+/* ============================================
+   MEDIA QUERY — mobile (max 700px)
+   ============================================ */
+@media (max-width: 700px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0 10px 0;
+  }
+
+  header img {
+    width: 170px;
+    margin: 0 0 12px 0;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 145px;
+    width: auto;
+    margin: 0;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-borda);
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  header nav ul a:hover {
+    background-color: var(--menu-letra-color);
+    color: white;
+  }
+
+  /* Main */
+  main h1 {
+    font-size: 1.4rem;
+    margin: 20px 0 8px 0;
+  }
+
+  main > p {
+    font-size: 0.9rem;
+    margin: 10px 0 0 0;
+    padding: 0 18px;
+  }
+
+  /* Article */
+  article {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 12px 24px 12px;
+    width: 100%;
+  }
+
+  /* Section */
+  section {
+    width: 100%;
+    max-width: 460px;
+    padding: 14px 16px 12px 16px;
+  }
+
+  section h2 {
+    font-size: 1.05rem;
+    margin: 0 0 10px 0;
+  }
+
+  section p {
+    font-size: 0.88rem;
+    margin: 0 0 12px 0;
+  }
+}
