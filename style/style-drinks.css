@@ -149,13 +149,6 @@ html {
     border: 2px solid var(--cor-borda);
   }
 
-  footer{
-    text-align: center;
-    margin: 0px;
-    background-color: var(--menu);
-    position: relative;
-  }
-
 @media (max-width: 1067px) {
 
   article {

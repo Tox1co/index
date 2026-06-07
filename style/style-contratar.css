@@ -135,13 +135,6 @@ html {
     margin: 0 15px 0 15px;
   }
 
-  footer{
-    text-align: center;
-    margin: 0px;
-    background-color: var(--menu);
-    position: relative;
-  }
-
 @media (max-width: 1067px) {
 
   article {

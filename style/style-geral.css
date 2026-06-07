@@ -21,3 +21,14 @@
 html {
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
+
+
+/* Rodapé do site*/
+
+footer{
+    border-top: 0.5px solid var(--cor-borda);
+    text-align: center;
+    margin: 0px;
+    background-color: var(--menu);
+    position: relative;
+  }
