@@ -7,7 +7,6 @@
     --corpo : #111111;
     --background-color: rgb(88, 73, 73);
     --text-color: white;
-    --font-size: 18px;
   }
 /* variaveis para usarmos no css */
 
@@ -15,7 +14,6 @@
   body {
     background-color: var(--corpo);
     color: var(--corpo-letra-color);
-    font-size: var(--font-size);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -28,6 +26,134 @@
     min-height: 100vh; /* Aqui estamos fazendo com que o corpo da página ocupe toda a altura da viewport */
   }
 /* Corpo da Pagina */
+
+/* Mobile */
+@media (min-width: 350px) {
+
+  body {
+    background-color: var(--corpo);
+    color: var(--corpo-letra-color);
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 0 0;
+    margin: 0px;
+  }
+
+  header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 10px 0;
+  }
+
+  header ul li {
+    width: 190px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-borda);
+    font-weight: bold;
+  }
+
+  header ul a:hover {
+      background-color: var(--menu-letra-color);
+      color: white;
+    }
+  
+  header img{
+    align-self: center;
+  }
+
+  main p {
+    max-width: 1200px;
+    font-weight: bold;
+    margin: 25px 25px 0 25px;
+  } 
+
+
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 25px 5px 25px 5px;
+    padding: 0px;
+    border-radius: 10px;
+  }
+
+  section {
+    width: 400px;
+    text-align: justify;
+    margin: 5px;
+    padding: 0px 15px 0px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  section p {
+    margin: 0 10px 0 10px;
+  }
+
+  section h2 {
+    margin: 15px 0 10px 0;
+  }
+
+  #img-sobre-nos {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /*ajusta a imagem perfeitamente no enquandramento que colocamos*/
+    max-width: 100%;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  #img-missao {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /*ajusta a imagem perfeitamente no enquandramento que colocamos*/
+    margin: 15px 0 15px 0 ;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+}
+
+@media (min-width: 768px) {
+
+  main p {
+    max-width: 1200px;
+    font-weight: bold;
+    margin: 25px 25px 0 25px;
+  } 
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 60%;
+    text-align: justify;
+    margin: 25px;
+    padding: 0px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  section p {
+    margin: 0 15px 0 15px;
+  }
+
+ 
+
+}
 
 
 /* Cabeçalho do site */
@@ -67,12 +193,10 @@
   ul li {
     display: inline-block;
     margin: 0 15px;
-    font-size: clamp(16px, 2vw, 25px);
   }
 
   ul li::before {
     content: "\2605";
-    font-size: clamp(16px, 2vw, 25px);
     margin-right: 8px;
   }
 
@@ -86,7 +210,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(14px, 2vw, 20px)
   }
   
   main p {
@@ -144,123 +267,3 @@
     border-radius: 10px;
     border: 0.5px solid var(--cor-borda);
   }
-
-@media (max-width: 1067px) {
-
-  article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    width: 40%;
-    text-align: justify;
-    margin: 25px;
-    padding: 0px 15px 5px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section p {
-    margin: 0 15px 0 15px;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  body {
-    background-color: var(--corpo);
-    color: var(--corpo-letra-color);
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0 0 0;
-    margin: 0px;
-  }
-
-  header ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px 0 10px 0;
-  }
-
-  header ul li {
-    width: 150px;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid var(--cor-borda);
-    font-weight: bold;
-  }
-
-  header ul a:hover {
-      background-color: var(--menu-letra-color);
-      color: white;
-    }
-  
-  header img{
-    align-self: center;
-  }
-
-  article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 25px 5px 25px 5px;
-    padding: 0px;
-    border-radius: 10px;
-  }
-
-  main p {
-    max-width: 1200px;
-    font-weight: bold;
-    margin: 25px 25px 0 25px;
-    font-size: 20px;
-  } 
-
-  section {
-    width: 400px;
-    text-align: justify;
-    margin: 5px;
-    padding: 0px 15px 0px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  section p {
-    margin: 0 10px 0 10px;
-    font-size: 20px;
-  }
-
-  section h2 {
-    font-size: 30px;
-  }
-
-  #img-sobre-nos {
-    width: 100%;
-    height: 220px;
-    object-fit: cover; /*ajusta a imagem perfeitamente no enquandramento que colocamos*/
-    max-width: 100%;
-    margin: 15px 0 15px 0;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-
-  #img-missao {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; /*ajusta a imagem perfeitamente no enquandramento que colocamos*/
-    margin: 15px 0 15px 0 ;
-    border-radius: 10px;
-    border: 2px solid var(--cor-borda);
-  }
-}
