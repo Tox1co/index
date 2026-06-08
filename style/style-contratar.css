@@ -6,7 +6,6 @@
 /* Parágrafo introdutório da página */
 main p {
   margin: 15px 0 0 0;
-  font-size: 16px;
 }
 
 section:hover {
@@ -38,7 +37,6 @@ section:hover h2, section:hover p  {
 @media (max-width: 700px) {
 
   main p {
-    font-size: 20px;
     font: bold;
     padding: 0 18px;
   }
