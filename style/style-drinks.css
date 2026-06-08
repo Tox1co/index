@@ -7,11 +7,12 @@
 main h1 {
   margin-bottom: 5px;
 }
-
 /* Sections da página de drinks ficam um pouco mais largas
    para acomodar o carrossel confortavelmente */
 section {
   width: 500px;
+  height: 90%;
+  min-height: 550px;
 }
 
 /* ============================================
@@ -104,8 +105,9 @@ section {
 @media (max-width: 1090px) {
 
   section {
-    width: 75%;
+    width: 85%;
     max-width: 580px;
+    height: 600px;
   }
 }
 
@@ -115,8 +117,9 @@ section {
 @media (max-width: 700px) {
 
   section {
-    width: 100%;
+    width: 560px;
     max-width: 460px;
+    height: 550px;
   }
 
   .carrossel-track img {
