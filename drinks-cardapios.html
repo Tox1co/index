@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AltusBar Experience</title>
     <link rel="icon" href="img/altusBar/logo.jpeg" type="image/jpeg">
-    <link rel="stylesheet" href="style/style-drinks.css">
     <link rel="stylesheet" href="style/style-geral.css">
-    <script src="js/menu/pag-card.js"></script>
-    <script src="js/carrossel/script.js"></script>
-    <script src="js/nav/script.js"></script>
+    <link rel="stylesheet" href="style/style-drinks.css">
+    <script type="text/javascript" defer src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -23,45 +21,30 @@
     </header>
     <main>
         <h1>Coquetéis</h1>
-        <article>
-
-            <section >
-                <h2>Drinks</h2>
-                <p>Oferecemos uma ampla gama de coquetéis alcoólicos e não alcoólicos, para tornar sua experiência a melhor possível.</p>
-
+        <article id="manda-chuva">
+            <section class="carrosel">
+                <article class="textos">
+                    <h2>Drinks</h2>
+                    <p>Oferecemos uma ampla gama de coquetéis alcoólicos e não alcoólicos, para tornar sua experiência a melhor possível.</p>
+                </article>
                 <!-- CARROSSEL DE DRINKS -->
-                <section class="carrossel">
-                    <nav class="carrossel-controles">
-                        <button class="btn-carrossel" onclick="moverCarrossel('drinks', -1)">&#10094;</button>
-                        <figure class="carrossel-track" id="track-drinks">
-                            <img src="img/drinks/carrosel-drinks-2.jpeg" alt="Drink 1">
-                            <img src="img/drinks/carrosel-drinks-4.jpeg" alt="Drink 2">
-                            <img src="img/drinks/carrosel-drinks-3.jpeg" alt="Drink 3">
-                            <!-- Adicione mais imagens aqui se quiser -->
-                        </figure>
-                        <button class="btn-carrossel" onclick="moverCarrossel('drinks', 1)">&#10095;</button>
-                    </nav>
-                    <div class="bolinhas"></div>
-                </section>
+                <article class="cardapio-drink">
+                    <img id="drinks" class="fadeIn" alt="Imagens dos drink's"/>
+                </article>
             </section>
-
-            <section>
-                <h2>Cardápios personalizados</h2>
-                <p>Oferecemos uma variedade de cardápios personalizados para atender às necessidades e preferências de nossos clientes. Além de que você mesmo possa criar seu próprio cardápio exclusivo.</p>
-
+            <section class="carrosel">
+                <article class="textos">
+                    <h2>Cardápios personalizados</h2>
+                    <p>Oferecemos uma variedade de cardápios personalizados para atender às necessidades e preferências de nossos clientes. Além de que você mesmo possa criar seu próprio cardápio exclusivo.</p>
+                </article> 
                 <!-- CARROSSEL DE CARDÁPIOS -->
-                <section class="carrossel">
-                    <nav class="carrossel-controles">
-                        <button class="btn-carrossel" onclick="moverCarrossel('cardapios', -1)">&#10094;</button>
-                        <figure class="carrossel-track" id="track-cardapios">
-                            <img src="img/cardapios/exemplo.jpeg" alt="Cardápio 1">
-                            <img src="img/altusBar/carrosel-2.jpeg" alt="Cardápio 2">
-                            <!-- Adicione mais imagens aqui se quiser -->
-                        </figure>
-                        <button class="btn-carrossel" onclick="moverCarrossel('cardapios', 1)">&#10095;</button>
-                    </nav>
-                    <div class="bolinhas"></div>
-                </section>
+                <article class="cardapio-drink">
+                        <img id="cardapio" class="fadeIn" alt="Imagens dos cardápios">
+                    <article class="gButon">
+                        <button id="btnVoltar" class="botoes"></button>
+                        <button id="btnAvancar" class="botoes"></button>
+                    </article>
+                </article>
             </section>
 
         </article>

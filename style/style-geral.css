@@ -67,7 +67,7 @@ header {
 header img {
   width: 200px;
   height: auto;
-  margin: 10px 0;
+  margin: 10px 0 10px 20px;
 }
 
 /* ============================================
@@ -117,7 +117,7 @@ main h1 {
   letter-spacing: 1px;
 }
 
-main > p {
+main p {
   width: 100%;
   max-width: 1200px;
   font-weight: bold;
@@ -135,7 +135,7 @@ article {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch; /* ← era flex-start */
   width: 100%;
   max-width: 1300px;
   padding: 20px 15px 30px 15px;
@@ -150,10 +150,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
+  width: 510px;
   max-width: 100%;
   text-align: justify;
-  padding: 20px 20px 15px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid var(--cor-borda);
 }

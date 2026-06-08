@@ -4,7 +4,7 @@
    ============================================ */
 
 /* Parágrafo introdutório da home */
-main > p {
+main p {
   font-size: 17px;
   margin: 30px 0 0 0;
 }
