@@ -9,7 +9,7 @@
    VARIÁVEIS GLOBAIS
    ============================================ */
 :root {
-  --menu-letra-color: #c9a84c;
+  --menu-letra-color: #cea73b;
   --corpo-letra-color: rgba(201, 168, 76, 0.75);
   --cor-borda: rgba(247, 181, 2, 0.979);
   --menu: #000000;
@@ -150,7 +150,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 510px;
+  width: 610px;
   max-width: 100%;
   text-align: justify;
   padding: 10px 20px;
@@ -200,6 +200,10 @@ footer {
   section {
     width: 65%;
     max-width: 580px;
+  }
+
+  main p{
+    font-size: 20px;
   }
 }
 

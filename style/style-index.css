@@ -9,6 +9,10 @@ main p {
   margin: 30px 0 0 0;
 }
 
+main h2 {
+  font-size: 30px;
+}
+
 /* Sections da home têm imagem interna — altura maior */
 section {
   width: 450px;

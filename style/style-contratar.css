@@ -9,11 +9,23 @@ main p {
   font-size: 16px;
 }
 
+section:hover {
+    background: linear-gradient(45deg, rgba(255, 238, 1, 0.74), var(--cor-borda), rgba(255, 238, 1, 0.74));
+    border: linear-gradient(45deg, rgba(255, 238, 1, 0.74), var(--cor-borda), rgba(255, 238, 1, 0.74));
+    border-radius: 10px;
+    border: 2px solid var(--menu-letra-color);
+}
+
+section:hover h2, section:hover p  {
+    color: #000000;
+    transition: black, 1s ease;
+
+}
+
 /* ============================================
    MEDIA QUERY — tablet (max 1090px)
    ============================================ */
 @media (max-width: 1090px) {
-
   article:last-of-type section {
     width: 65%;
     max-width: 580px;
@@ -25,8 +37,9 @@ main p {
    ============================================ */
 @media (max-width: 700px) {
 
-  main > p {
-    font-size: 15px;
+  main p {
+    font-size: 20px;
+    font: bold;
     padding: 0 18px;
   }
 

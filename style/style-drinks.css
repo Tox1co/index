@@ -6,12 +6,16 @@
 /* H1 da página */
 main h1 {
   margin-bottom: 5px;
+  font-size: 40px;
+}
+
+main h2 {
+  font-size: 30px;
 }
 
 #manda-chuva{
   width: 100%;
   max-width: 1300px;
-  border: 2px solid white
 }
 
 /* ============================================
@@ -39,6 +43,38 @@ main h1 {
   margin: 0 0 0 0;
 }
 
+
+#drinks {
+  width: 80%;
+  height: 480px;
+  object-fit: cover;
+  margin: 10px 0 5px 0;
+  border-radius: 8px;
+  border: 0.5px solid var(--cor-borda);
+}
+
+#cardapio {
+  width: 90%;
+  height: 480px;
+  object-fit: cover;
+  margin: 10px 0 5px 0;
+  border-radius: 8px;
+  border: 0.5px solid var(--cor-borda);
+}
+
+.botoes{
+  width: 100px;
+  height: 30px;
+  margin-top: -40px;
+  background-color: var(--menu-letra-color);
+  border: 0px;
+  font-size: 20px;
+}
+
+.botoes:hover{
+  background-color: var(--cor-borda);
+}
+
 /* ============================================
    MEDIA QUERY — tablet (max 1090px)
    ============================================ */
@@ -62,8 +98,21 @@ main h1 {
     min-height: 500px;
   }
 
-  .textos{
-  width: 100%;
-  max-width: 550px;
+  .textos {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .gButon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .botoes {
+    width: 100px;
+    height: 50px;
+    background-color: var(--menu-letra-color);
+    border: 0px;
   }
 }
