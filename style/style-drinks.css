@@ -84,12 +84,25 @@ main h2 {
     height: auto;
     min-height: 550px;
   }
+    .gButon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .botoes {
+    width: 100px;
+    height: 50px;
+    background-color: var(--menu-letra-color);
+    border: 0px;
+  }
 }
 
 /* ============================================
    MEDIA QUERY — mobile (max 700px)
    ============================================ */
 @media (max-width: 700px) {
+
   section {
     width: 50%;
     max-width: 460px;
@@ -100,6 +113,8 @@ main h2 {
   .textos {
     width: 100%;
     max-width: 550px;
+    display: flex;
+    flex-direction: row;
   }
 
   .gButon {
@@ -118,6 +133,26 @@ main h2 {
   #cardapio {
   width: 90%;
   height: 80%;
+  }
+
+}
+
+@media (max-width: 454px){
+
+  .cardapio-drink{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+
+  #drinks {
+    height: auto;
+  }
+
+  #cardapio {
+    margin-top: auto;
+    height: auto;
   }
 
 }
