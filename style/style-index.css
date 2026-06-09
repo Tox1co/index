@@ -5,7 +5,7 @@
 
 /* Parágrafo introdutório da home */
 main p {
-  margin: 30px 0 20px 0;
+  margin: 30px 10px 20px 10px;
 }
 
 main h2 {
@@ -21,21 +21,26 @@ section {
    IMAGENS das sections
    ============================================ */
 #img-sobre-nos {
-  width: 100%;
+  width: 350px;
   height: 380px;
   object-fit: cover;
-  margin: 10px 0 5px 0;
+  margin: 10px 10px 20px 10px;
   border-radius: 8px;
   border: 0.5px solid var(--cor-borda);
 }
 
 #img-missao {
-  width: 100%;
+  width: 350px;
   height: 380px;
   object-fit: cover;
-  margin: 10px 0 5px 0;
+  margin: 10px 10px 20px 10px;
   border-radius: 8px;
   border: 0.5px solid var(--cor-borda);
+}
+
+.texto {
+  padding-top: 0px;
+  padding-bottom: 10px;
 }
 
 /* ============================================
@@ -43,15 +48,20 @@ section {
    ============================================ */
 @media (max-width: 700px) {
 
+  section {
+  width: 400px;
+}
+
   #img-sobre-nos {
     height: 200px;
-    margin: 8px 0 4px 0;
+    padding: 10xp;
+    margin: 8px 10px 4px 10px;
     border: 2px solid var(--cor-borda);
   }
 
   #img-missao {
     height: 340px;
-    margin: 8px 0 4px 0;
+    margin: 8px 5px 4px 5px;
     border: 2px solid var(--cor-borda);
   }
 }
