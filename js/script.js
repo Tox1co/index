@@ -9,8 +9,6 @@ const path_drinks = "img/drinks/"  // Aqui é a variavel do caminho da pasta das
 const path_cardapios = "img/cardapios/" // Aqui é a variavel do caminho da pasta das img dos cardápios
 const moldura_drinks = document.getElementById("drinks")
 const moldura_cardapio = document.getElementById("cardapio")
-const nomeProduto = document.querySelector("h3")
-const precoProduto = document.querySelector("h4")
 
 window.onload = iniciar
 
