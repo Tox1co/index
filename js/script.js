@@ -17,7 +17,7 @@ window.onload = iniciar
 function iniciar() {
 
     fotosDrinks = ["carrossel-drinks-1.jpeg", "carrossel-drinks-2.jpeg", "carrossel-drinks-3.jpeg", "carrossel-drinks-4.jpeg"]
-    fotosCardapios = ["carrossel-cardapio-1.jpeg", "carrossel-cardapio-2.jpeg", "carrossel-cardapio-3.jpeg"]
+    fotosCardapios = ["carrossel-cardapio-1.jpeg", "carrossel-cardapio-2.jpg", "carrossel-cardapio-3.jpg", "carrossel-cardapio-4.jpg"]
 
     moldura_drinks.src = `img/drinks/${fotosDrinks[0]}`
     moldura_cardapio.src = `img/cardapios/${fotosCardapios[0]}`
