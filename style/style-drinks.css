@@ -113,6 +113,7 @@ main h2 {
   .textos {
     width: 100%;
     max-width: 550px;
+    height: auto;
     display: flex;
     flex-direction: row;
   }
@@ -138,12 +139,12 @@ main h2 {
 }
 
 @media (max-width: 454px){
-
   .cardapio-drink{
     display: flex;
     flex-direction: row;
     width: auto;
     height: auto;
+    padding: 0;
   }
 
   #drinks {
