@@ -4,9 +4,9 @@
    ============================================ */
 
 /* Parágrafo introdutório da home */
-main p {
+/* main p {
   margin: 30px 10px 20px 10px;
-}
+} */
 
 main h2 {
   font-size: 30px;
@@ -39,7 +39,7 @@ section {
 }
 
 .texto {
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -60,6 +60,66 @@ section {
   }
 
   #img-missao {
+    height: 340px;
+    margin: 8px 5px 4px 5px;
+    border: 2px solid var(--cor-borda);
+  }
+}
+
+@media (max-width: 420px){
+main p {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .texto {
+    padding: 5px 5px 5px 5px;
+    width: 290px;
+  }
+
+    /* Section */
+  section {
+    width: 100%;
+    max-width: 400px;
+    /* padding: 14px 16px 12px 16px; */
+  }
+
+  #img-sobre-nos {
+    width: 290px;
+    height: 200px;
+    padding: 10xp;
+    margin: 8px 10px 4px 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  #img-missao {
+    width: 290px;
+    height: 340px;
+    margin: 8px 5px 4px 5px;
+    border: 2px solid var(--cor-borda);
+  }
+
+}
+
+@media (max-width: 360px){
+  main p {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .texto {
+    padding: 5px 5px 5px 5px;
+    width: 290px;
+  }
+
+  #img-sobre-nos {
+    width: 290px;
+    height: 200px;
+    padding: 10xp;
+    margin: 8px 10px 4px 10px;
+    border: 2px solid var(--cor-borda);
+  }
+
+  #img-missao {
+    width: 290px;
     height: 340px;
     margin: 8px 5px 4px 5px;
     border: 2px solid var(--cor-borda);
