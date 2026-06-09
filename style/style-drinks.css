@@ -183,6 +183,10 @@ main h2 {
 
 @media (max-width: 360px){
 
+  .cardapio-drink {
+    margin: 0;
+  }
+
   #drinks {
     width: 200px;
     height: 350px;
