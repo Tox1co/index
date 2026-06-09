@@ -163,7 +163,7 @@ section h2 {
   font-family: 'Playfair Display', Georgia, serif;
   margin: 0 0 12px 0;
   font-size: var(--font-size);
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 section p {
@@ -302,7 +302,7 @@ footer {
 @media (max-width: 454px){
 
   section h2 {
-    font-size: 5px;
+    font-size: 19px;
   }
 
 }

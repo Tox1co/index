@@ -157,3 +157,11 @@ main h2 {
   }
 
 }
+
+@media (max-width: 454px){
+
+  section h2 {
+    font-size: 20px;
+  }
+
+}
