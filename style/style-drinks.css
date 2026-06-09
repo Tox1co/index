@@ -133,17 +133,18 @@ main h2 {
   }
 
   #drinks {
-  width: 400px;
-  height: 580px;
+  width: 300px;
+  height: 480px;
   object-fit: cover;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 20px 0;
+
   border-radius: 8px;
   border: 0.5px solid var(--cor-borda);
 }
 
 #cardapio {
-  width: 400px;
-  height: 580px;
+  width: 350px;
+  height: 480px;
   margin: 10px 0 5px 0;
   border-radius: 8px;
   border: 0.5px solid var(--cor-borda);
@@ -158,15 +159,6 @@ main h2 {
     width: auto;
     height: auto;
     padding: 0;
-  }
-
-  #drinks {
-    height: auto;
-  }
-
-  #cardapio {
-    margin-top: auto;
-    height: auto;
   }
 
 }
